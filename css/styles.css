@@ -383,13 +383,6 @@ body {
 .client-item {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
-
-.client-item:hover,
-.client-item:focus {
-    border: 1px solid var(--accent-color);
 }
 
 .client-list-link {
@@ -398,11 +391,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
+.client-list-link:hover,
+.client-list-link:focus {
+    border: 1px solid var(--accent-color);
 }
 
 .clients-list-icon {
-    fill: #AFB1B8
+    fill: #AFB1B8;
 }
 
 .client-list-link:hover .clients-list-icon,
@@ -483,12 +482,12 @@ body {
     color: var(--accent-color);
 }
 
-.join-us {
+.social {
     display: block;
 
 }
 
-.join-us-text {
+.social-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -589,10 +588,13 @@ body {
     flex-basis: calc((100% - 60px)/3);
 }
 
-.project-card:hover {
-    border: 1px solid #EEEEEE;
+.project-card-link {
+    display: block;
+}
+
+.project-card-link:hover,
+.project-card-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
 }
 
 .project-card-container-wrapper {
